@@ -15,7 +15,7 @@ const PORT = 3000;
 app.use(cors());
 app.use(express.static('public'));
 
-const GEMINI_API_KEY = 'AIzaSyBwo3CVQPvn4YO1EszC5AYdCpqg-6DaNKE';
+const GEMINI_API_KEY = 'gemini api key';
 
 const GEMINI_API_URL = `https://generativelanguage.googleapis.com/v1beta/models/gemini-pro:generateContent?key=${GEMINI_API_KEY}`;
 const TTS_API = `https://texttospeech.googleapis.com/v1/text:synthesize?key=${GEMINI_API_KEY}`;

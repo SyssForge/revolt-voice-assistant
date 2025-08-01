@@ -1,132 +1,122 @@
 body {
-  margin: 0;
-  font-family: 'Roboto', sans-serif;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  min-height: 100vh;
-  background-color: #000;
-  color: #fff;
+    margin: 0;
+    font-family: 'Roboto', sans-serif;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    background-color: #000;
+    color: #fff;
 }
 
 .voice-assistant-container {
-  text-align: center;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
 }
 
+/* NEW: Style for the 'REVOLT' title */
 .brand-title {
-  font-size: 2.5rem;
-  font-weight: 700;
-  color: #E6E6E6;
-  letter-spacing: 0.5rem;
-  margin-bottom: 1rem;
-  text-transform: uppercase;
+    font-size: 2.5rem;
+    font-weight: 700;
+    color: #E6E6E6;
+    letter-spacing: 0.5rem;
+    margin-bottom: 1rem;
+    text-transform: uppercase;
 }
 
+/* NEW: Container for the robot icon */
 .robot-icon-container {
-  margin-bottom: 1.5rem;
-  color: #888;
+    margin-bottom: 1.5rem;
+    color: #888;
 }
+
+/* NEW: Sizing the robot icon */
 .robot-icon-container svg {
-  width: 60px;
-  height: 60px;
+    width: 60px;
+    height: 60px;
 }
 
 .status-text {
-  font-size: 1.2rem;
-  color: #aaa;
-  height: 20px;
-  margin-bottom: 2rem;
+    font-size: 1.2rem;
+    color: #aaa;
+    height: 20px;
+    margin-bottom: 2rem;
 }
 
 .mic-button-container {
-  position: relative;
-  width: 150px;
-  height: auto;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
+    position: relative;
+    width: 150px;
+    height: 150px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
 
 .mic-button {
-  width: 80px;
-  height: 80px;
-  border-radius: 50%;
-  border: none;
-  background-color: #4A90E2;
-  cursor: pointer;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  transition: background-color 0.3s ease;
-  position: relative;
-  z-index: 2;
+    width: 80px;
+    height: 80px;
+    border-radius: 50%;
+    border: none;
+    background-color: #4A90E2;
+    cursor: pointer;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    transition: background-color 0.3s ease;
+    position: relative;
+    z-index: 2;
 }
 
 .mic-button:hover {
-  background-color: #5aa1f5;
+    background-color: #5aa1f5;
 }
 
 .mic-icon svg {
-  width: 32px;
-  height: 32px;
-  color: white;
+    width: 32px;
+    height: 32px;
+    color: white;
 }
 
 .mic-button.listening::before,
 .mic-button.speaking::before {
-  content: '';
-  position: absolute;
-  left: 50%;
-  top: 50%;
-  transform: translate(-50%, -50%);
-  width: 100%;
-  height: 100%;
-  border-radius: 50%;
-  z-index: -1;
-  animation: pulse 1.5s infinite ease-out;
+    content: '';
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+    width: 100%;
+    height: 100%;
+    border-radius: 50%;
+    z-index: -1;
+    animation: pulse 1.5s infinite ease-out;
 }
+
 .mic-button.listening {
-  background-color: #D0021B;
+    background-color: #D0021B; /* Red for listening */
 }
+
 .mic-button.speaking {
-  background-color: #4A90E2;
+    background-color: #4A90E2; /* Blue for speaking */
 }
 
 @keyframes pulse {
-  0% {
-    width: 100%;
-    height: 100%;
-    opacity: 0.6;
-  }
-  100% {
-    width: 220%;
-    height: 220%;
-    opacity: 0;
-  }
+    0% {
+        width: 100%;
+        height: 100%;
+        opacity: 0.6;
+    }
+    100% {
+        width: 220%;
+        height: 220%;
+        opacity: 0;
+    }
 }
 
 .brand-text {
-  margin-top: 2rem;
-  font-size: 0.9rem;
-  color: #666;
-}
-
-/* ✅ Stop button style */
-.stop-button {
-  margin-top: 20px;
-  padding: 6px 12px;
-  border: none;
-  background-color: #D0021B;
-  color: white;
-  font-size: 14px;
-  border-radius: 6px;
-  cursor: pointer;
-  display: none;
-}
-.stop-button:hover {
-  background-color: #b50018;
+    margin-top: 2rem;
+    font-size: 0.9rem;
+    color: #666;
 }

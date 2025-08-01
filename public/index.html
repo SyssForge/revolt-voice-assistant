@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Revolt Assistant</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <div class="voice-assistant-container">
+    <h1 class="brand-title">REVOLT</h1>
+
+    <div class="robot-icon-container">
+      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor">
+        <path d="M12,2A2,2,0,0,0,10,4V6H4A2,2,0,0,0,2,8V16A2,2,0,0,0,4,18H5V20A2,2,0,0,0,7,22H17A2,2,0,0,0,19,20V18H20A2,2,0,0,0,22,16V8A2,2,0,0,0,20,6H14V4A2,2,0,0,0,12,2Z"/>
+      </svg>
+    </div>
+
+    <div id="status" class="status-text">Click the mic to start</div>
+
+    <div class="mic-button-container">
+      <button id="micButton" class="mic-button">
+        <div class="mic-icon">
+          <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" fill="none" stroke="currentColor" stroke-width="2"><path d="M12 1a3 3 0 0 0-3 3v8a3 3 0 0 0 6 0V4a3 3 0 0 0-3-3z"/><path d="M19 10v2a7 7 0 0 1-14 0v-2"/><line x1="12" y1="19" x2="12" y2="22"/></svg>
+        </div>
+      </button>
+
+      <!-- ✅ NEW: Stop button -->
+      <button id="stopBtn" class="stop-button">⛔ Stop</button>
+    </div>
+
+    <div class="brand-text">Powered by Google Gemini</div>
+  </div>
+
+  <script src="/socket.io/socket.io.js"></script>
+  <script src="script.js"></script>
+</body>
+</html>
